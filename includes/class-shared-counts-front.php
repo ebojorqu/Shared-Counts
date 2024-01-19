@@ -415,7 +415,7 @@ class Shared_Counts_Front {
 					$link['social_action']  = 'Share';
 					break;
 				case 'twitter':
-					$link['link']           = 'https://twitter.com/share?url=' . $link['url'] . '&text=' . htmlspecialchars( rawurlencode( html_entity_decode( $link['title'], ENT_COMPAT, 'UTF-8' ) ), ENT_COMPAT, 'UTF-8' );
+					$link['link']           = 'https://twitter.com/intent/tweet?url=' . $link['url'] . '&text=' . htmlspecialchars( rawurlencode( html_entity_decode( $link['title'], ENT_COMPAT, 'UTF-8' ) ), ENT_COMPAT, 'UTF-8' );
 					$link['label']          = esc_html__( 'Tweet', 'shared-counts' );
 					$link['icon']           = '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.8944 10.4695L21.3345 2H19.5716L13.1085 9.35244L7.95022 2H1.99936L9.80147 13.1192L1.99936 22H3.76218L10.5832 14.2338L16.0318 22H21.9827L13.8944 10.4695ZM11.4792 13.2168L10.6875 12.1089L4.39789 3.30146H7.10594L12.1833 10.412L12.9717 11.5199L19.5708 20.7619H16.8628L11.4792 13.2168Z" /></svg>';
 					$link['target']         = '_blank';
